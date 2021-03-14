@@ -1,0 +1,9 @@
+version: '3.7'
+services:
+  tomcat:
+    image: tomcat
+    ports:
+      - 8090:8080
+    container_name: petclinic
+    volumes:
+      - ./tomcat-data:/usr/local/tomcat
